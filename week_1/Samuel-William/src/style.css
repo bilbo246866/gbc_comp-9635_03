@@ -1,0 +1,9 @@
+ nav ul li {
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+}
+
+h1 {
+	font-family: Helvetica;
+}
