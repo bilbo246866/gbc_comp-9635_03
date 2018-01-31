@@ -3,30 +3,52 @@
 <head>
 	<title>Hello</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="menu.js"></script>
 
 </head>
 <body>
 	<header>
-		<nav>
-		 	<ul>
-		 		<li><a href="#">Home</a></li>
-		 		<li><a href="#">About<a></li>
-		 		<li><a href="#">Projects</a></li>
-		 		<li><a href="#">Contacts</a></li>
-		 		<li><a href="#">Links</a></li>
-		 	</ul>
-		 	
-			<h1>Hello World</h1>
-			<h2>My Name is William</h2>
-			<h3>I am an aspiring front-end developer currently seeking new opportunities</h3>
-		</nav>
+
+	<ul class="topnav" id="myTopnav">
+
+	  <a href="#Work Experience" class="active">Experience</a>
+	  <a href="#Location">Location</a>
+	  <a href="#Education">Education</a>
+	  <a href="#Hobbies">Hobbies</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+  	</ul>	
+
+			
+		
+		<h1 class="greeting">Hello World</h1>
+		<h2>My Name is William</h2>
+			
 	</header>
-	<div class="container">
-		<p>I've been at it now for 2.5 years and have a fairly good understanding of HTML5, CSS3, Javascript, jQuery, Node.js, Bootstrap</p> 
-		<section>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="container">
+			
+			<h3>I am an aspiring front-end developer currently seeking opportunities..</h3>
+		<p><em>I've been at it now for 21/2 years and have a fairly good understanding of HTML5, CSS3, Javascript, jQuery, Node.js, PHP, Bootstrap.</em></p> 
+		<section id="Work Experience">
+			<h4>Experience</h4>
+			<p>
+			The majority of my work experience in the technology sector has involved support roles
+			and I have been employed over the years in a technical support role in various forms, reaching back
+			to the late 1980s / early 90's. I have worked as a technical analyst, network analyst, desktop support
+			specialist, Network Administrator, Server Administrator, Level 2 Service Desk and Telecom Analyst.</p>
+			<p>In 2015 after a downsizing, I decided it was time to change direction and dive into the world of Web 
+			Design and Development. I enjoyed the idea of creating something using technology rather than fixing, or cleaning
+			up someone else's disaster. I enrolled at George Brown College in the Continuing Education department and started my first
+			course called Introduction to Web Design and Development. That was in the summer of 2015 and have not looked back since.
+			I've enjoyed completing all of the projects for my classes, both in Web Design and Web Development.</p> <p>The trick is to not stop "doing"
+			because even if you take a break for just a couple of months a lot can be forgotten, therefore I constantly need to refresh my knowledge, especially in Javascript and jQuery. As far as solid work experience in Development I have to say that I currently don't have too much.
+			Some of the work I do has been volunteer work and I have volunteer mentored at an outfit called "Ladies learning code" which is part of "Canada Learning Code" and helps to teach code to groups of people all across the country. I did this on the recommendation of one of my instructors and I quite enjoy the helping aspect of the job, and it can be a good refresher as well, you're learning as well as assisting the instructor! Beyond this, there's a few Web pages I have updated for friends and acquaintances in exchange for their endorsement. My main priority right now is to create an online portfolio and showcase some Web pages and Web apps.</p>
+
+			<p>I look forward to learning many great things in this advanced Javascript class.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -34,7 +56,30 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		 </section>
 
-		 <section>
+		 <section id="Location">
+			 	<h4>Location</h4>
+				 <p>
+				 I have lived in Toronto for the last 30 years, and own a home in Midtown 
+				 Toronto. I would be willing to travel if the right opportunity came up, and if 
+				 working remotely was an option, then I would do it. Since Toronto
+				 is a well-known tech hub, with many established companies and startups based here,
+				 it would seem logical to begin a job search with Toronto, or the GTA. I understand that Vancouver 
+				 is a tech hub as well and while the milder winters might attract many job seekers, the high cost 
+				 of living in Vancouver seems a negative. Don't know much about the job situation in Calgary (I come from
+				 Alberta, - a great place to live and work) same with Ottawa - don't know much about it.
+				 I definitely would NOT want to live or work in the United States.</p>
+		</section>		 
+
+	   	<section id="Education">
+	   		<h4>Education</h4>
+	   			<ul class="education">
+	   				<li>Bachelor of Science, University of Alberta; 1986</li>
+	   				<li>Certificate in Web Design, George Brown College; 2016</li>
+	   				<li>Studying for Web Development Certificate, George Brown College; 2016 - present</li>
+	   				<li>The Complete JavaScript course, Udemy (online Web-based); 2017</li>
+	   				<li>Web Development Bootcamp, Udemy (online Web-based); 2017</li>
+	   				
+	   			</ul>
 			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -47,22 +92,58 @@
 			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			 
+
+		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</section>	 
+
+		 <section id="Hobbies">
+		 	<h4>Hobbies</h4>
+		 	<p>
+		 	I enjoy Photography and probably spend too much on equipment to indulge in this.
+		    My focus over the last couple of years has been with people photography. So I've been
+		    getting people to "pose"  for "headshots" and Portraits, using studio lighting
+		    or simply just speedlight flash when a studio is not an option. I'd like to try my hand at Pet Photography
+		    which could be a challenge because some animals don't like to stay still for very long.</p>
+
+	    	 <p>I enjoy music, both listening to and playing. Lately I've become interested in Jazz. It's definitely 
+		 	 	more difficult to play Jazz though. I've been learning to play the Ukelele.</p>
+
+		 	 <p>Outdoors Stuff: Hiking, Road-Cycling, Skiing, Gardening, tried Mountain Biking a few times. Camping and travelling
+		 	 	around Ontario. </p>
+		 	 <p>Here's a photo of my cat, who will actually stay still for a pose.</p>
+		 	 
+		 	 <img src="cat.jpg" class="cat" alt="photo of cat">		  
+
 		 </section>
 
 	 </div>
 
 	 <footer>
+
 	 	<ul>
-	 		<li>Education</li>
-	 		<li>Online Training</li>
-	 		<li>Mentoring</li>
-	 		<li>Volunteering</li>
+	 		<li>Copyright &copy; 2018</li>
+	 		<li>Links</li>
+	 		<li>Online Educational Videos</li>
+	 		<li>Resume</li>
+	 		<li>Book Recommendations</li>
 	 	</ul>
+
 
 	 </footer>
 
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
